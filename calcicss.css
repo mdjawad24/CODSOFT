@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f9fc; /* Light blue-grey background */
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background-color: #2d2f36; /* Dark grey background for the calculator */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    font-size: 28px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f2227; /* Darker grey for the display */
+    color: #fff; /* White text */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #3a3e47; /* Slightly lighter dark grey */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff; /* White text for buttons */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #50545e; /* Darker shade on hover */
+}
+
+.equal {
+    grid-column: span 2;
+    background-color: #00c292; /* Bright teal for the equals button */
+    color: white;
+}
+
+.equal:hover {
+    background-color: #00a57a; /* Darker teal on hover */
+}
+
+.btn:nth-child(3), .btn:nth-child(4), .btn:nth-child(8), .btn:nth-child(12) {
+    background-color: #f76c6c; /* Vibrant red for operator buttons */
+}
+
+.btn:nth-child(3):hover, .btn:nth-child(4):hover, .btn:nth-child(8):hover, .btn:nth-child(12):hover {
+    background-color: #e55b5b; /* Darker red on hover */
+}
